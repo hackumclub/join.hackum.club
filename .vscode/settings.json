@@ -1,0 +1,17 @@
+{
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "files.exclude": {
+      "**/.git": true,
+      "**/.next": true,
+      "**/.DS_Store": true,
+      "**/node_modules": true,
+      "**/coverage": true
+    }
+  }
