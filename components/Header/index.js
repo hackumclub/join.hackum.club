@@ -16,7 +16,6 @@ const Header = () => {
   return (
     <div>
       <Testing>Hello</Testing>
-      <p>Hii</p>
     </div>
   );
 };
