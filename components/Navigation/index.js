@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { css, jsx } from "@emotion/react";
 
 const Nav = styled.header`
   display: flex;
@@ -22,7 +21,7 @@ const Logo = styled.img`
   }
 `;
 
-const Header = () => {
+const Navigation = () => {
   return (
     <Nav>
       <Logo src="/Logo.svg"></Logo>
@@ -31,4 +30,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navigation;

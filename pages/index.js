@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Header from "@/components/Navigation";
+import Navigation from "@/components/Navigation";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         <meta name="description" content="HACKUM клубийн бүртгэл эхэллээ" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      <Navigation />
     </>
   );
 }
