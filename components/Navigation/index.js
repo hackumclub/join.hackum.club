@@ -1,11 +1,12 @@
 import styled from "@emotion/styled";
+import CustomButton from "../CustomButton";
 
 const Nav = styled.header`
   display: flex;
   aling-items: center;
   justify-content: space-between;
   margin: 0 24px;
-  padding: 5px 24px;
+  padding: 0 24px;
   height: 72px;
 
   @media (min-width: 640px) {
@@ -25,7 +26,7 @@ const Navigation = () => {
   return (
     <Nav>
       <Logo src="/Logo.svg"></Logo>
-      <button>Холбогдох</button>
+      <CustomButton type="ghost" text="Холбогдох"></CustomButton>
     </Nav>
   );
 };
