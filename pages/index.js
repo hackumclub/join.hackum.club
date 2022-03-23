@@ -9,7 +9,7 @@ export default function Home() {
         <meta name="description" content="HACKUM клубийн бүртгэл эхэллээ" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Banner text="Мэдээллийн технологийн Hackum {<br/>} клубийн бүртгэл эхэллээ" />
+      <Banner text={["Мэдээллийн технологийн Hackum", <br/>, "клубийн бүртгэл эхэллээ"]}/>
     </>
   );
 }
