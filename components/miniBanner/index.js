@@ -1,7 +1,15 @@
 import styled from "@emotion/styled"
 
+const FlexContainer = styled.div`
+  widht: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+`
+
 const MiniBannerDiv = styled.div`
   display: flex;
+  justify-content: center;
   flex-direction: row;
   width: 70%;
   height: 150px;
@@ -38,13 +46,15 @@ const IconBanner = styled.div`
 
 const miniBanner = (props) => {
   return (
-    <MiniBannerDiv>
-      <IconBanner>{props.link}</IconBanner>
-      <TextBox>
-        <Title>{props.title}</Title>
-        <Text>{props.text}</Text>
-      </TextBox>
-    </MiniBannerDiv>
+    <FlexContainer>
+      <MiniBannerDiv>
+        <IconBanner>{props.link}</IconBanner>
+        <TextBox>
+          <Title>{props.title}</Title>
+          <Text>{props.text}</Text>
+        </TextBox>
+      </MiniBannerDiv>
+    </FlexContainer>
   );
 };
 
