@@ -1,4 +1,5 @@
 import { css, Global } from "@emotion/react";
+import "react-flexbox-grid/dist/react-flexbox-grid.css";
 
 function MyApp({ Component, pageProps }) {
   return (
