@@ -26,7 +26,7 @@ const Navigation = () => {
   return (
     <Nav>
       <Logo src="/Logo.svg"></Logo>
-      <CustomButton type="ghost" text="Холбогдох"></CustomButton>
+      <CustomButton>Холбогдох</CustomButton>
     </Nav>
   );
 };

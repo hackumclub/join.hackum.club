@@ -11,8 +11,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <CustomButton type="outline" text="Бүртгүүлэх" />
-      <CustomButton type="solid" text="Бүртгүүлэх" />
     </>
   );
 }
