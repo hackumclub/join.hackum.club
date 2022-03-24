@@ -1,7 +1,16 @@
 import Head from "next/head";
 import Navigation from "@/components/Navigation";
-import CustomButton from "@/components/CustomButton";
-import Vision from "@/components/Vision";
+
+
+
+
+
+
+
+
+
+
+
 
 export default function Home() {
   return (
