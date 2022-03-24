@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Navigation from "@/components/Navigation";
-import Text from "@/components/text1";
+import Text  from "@/components/text1";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
+      <Text/>
     </>
   );
 }
