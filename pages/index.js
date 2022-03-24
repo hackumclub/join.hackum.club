@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title>Бүртгэл - Hackum.club</title>
-        <meta name="description" content="HACKUM клубийн бүртгэл эхэллээ" /> 
+        <meta name="description" content="HACKUM клубийн бүртгэл эхэллээ" />
       </Head>
       <Banner>Мэдээллийн технологийн Hackum {LineBreak} клубийн бүртгэл эхэллээ</Banner>
       <Navigation />
