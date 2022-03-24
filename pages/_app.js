@@ -1,4 +1,5 @@
 import { css, Global } from "@emotion/react";
+import "react-flexbox-grid/dist/react-flexbox-grid.css";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -9,6 +10,7 @@ function MyApp({ Component, pageProps }) {
             background-color: #1f2028;
             margin: 0;
             padding: 0;
+            font-family: "Rubik", sans-serif;
           }
         `}
       />
