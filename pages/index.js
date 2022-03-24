@@ -4,14 +4,6 @@ import Navigation from "@/components/Navigation";
 import CustomButton from "@/components/CustomButton";
 import Arrow from "@/components/Arrow";
 
-
-
-
-
-
-
-
-
 export default function Home() {
   const LineBreak = <br />;
   return (
