@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navigation from "@/components/Navigation";
+import CustomButton from "@/components/CustomButton";
 
 export default function Home() {
   return (
