@@ -9,10 +9,10 @@ const BannerContainer = styled.div`
   background-size: cover;
 `;
 
-const Banner = (props) => {
+const Banner = ({children}) => {
   return (
       <BannerContainer>
-        <Filter text={props.text}></Filter>
+        <Filter>{children}</Filter>
       </BannerContainer>
   );
 };
