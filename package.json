@@ -1,10 +1,10 @@
 {
-  "name": "join",
+  "name": "y",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "PORT=3001 next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -17,5 +17,18 @@
   "devDependencies": {
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "version": "1.0.0",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackumclub/join.hackum.club.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hackumclub/join.hackum.club/issues"
+  },
+  "homepage": "https://github.com/hackumclub/join.hackum.club#readme"
 }

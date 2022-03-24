@@ -1,6 +1,10 @@
 import Head from "next/head";
 import Navigation from "@/components/Navigation";
+<<<<<<< Updated upstream
 
+=======
+import About from "@/components/About";
+>>>>>>> Stashed changes
 export default function Home() {
   return (
     <>
@@ -10,6 +14,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
+<<<<<<< Updated upstream
+=======
+      <About />
+>>>>>>> Stashed changes
     </>
   );
 }
