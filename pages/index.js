@@ -2,8 +2,8 @@ import Head from "next/head";
 import Banner from "components/Banner";
 import Navigation from "@/components/Navigation";
 import CustomButton from "@/components/CustomButton";
+import Arrow from "@/components/Arrow";
 
-import About from "@/components/About";
 export default function Home() {
   const LineBreak = <br />;
   return (
@@ -16,7 +16,6 @@ export default function Home() {
         Мэдээллийн технологийн Hackum {LineBreak} клубийн бүртгэл эхэллээ
       </Banner>
       <Navigation />
-      <About />
     </>
   );
 }
