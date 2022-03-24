@@ -7,10 +7,10 @@ export default function Home() {
     <>
       <Head>
         <title>Бүртгэл - Hackum.club</title>
-        <meta name="description" content="HACKUM клубийн бүртгэл эхэллээ" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="HACKUM клубийн бүртгэл эхэллээ" /> 
       </Head>
       <Navigation />
+      asdjfhsdailgj lajkd ghrj i
     </>
   );
 }
