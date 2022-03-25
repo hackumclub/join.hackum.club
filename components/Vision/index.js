@@ -1,12 +1,11 @@
 import styled from "@emotion/styled";
-import { css } from "@emotion/react";
 import { useState } from "react";
 function Vision() {
   const Con = styled.div`
     display: grid;
     grid-template-columns: auto auto;
     background-color: #292a32;
-    height: 300px;
+    height: 350px;
     border-radius: 10px;
     grid-gap: 10px;
     padding: 20px;
@@ -94,7 +93,7 @@ function Vision() {
           }}
         >
           {goalSelected && (
-            <span style={{ color: "white"}}>ЭРХЭМ ЗОРИЛГО</span>
+            <span style={{ color: "white" }}>ЭРХЭМ ЗОРИЛГО</span>
           )}
           {visionSelected && <span>ЭРХЭМ ЗОРИЛГО</span>}
 
