@@ -62,7 +62,7 @@ const IconBox = styled.div`
   }
 `
 
-const miniBanner = (props) => {
+const MiniBanner = (props) => {
   return (
     <FlexContainer>
       <MiniBannerDiv>
@@ -80,4 +80,4 @@ const miniBanner = (props) => {
 
 {/* <MiniBanner title="Сонирхол нэг хамт олонтой болох" text="Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ текстийг түр ашиглана"/> */}
 
-export default miniBanner;
+export default MiniBanner;
