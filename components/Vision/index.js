@@ -6,12 +6,13 @@ function Vision() {
     display: grid;
     grid-template-columns: auto auto;
     background-color: #292a32;
-    width: 88vw;
-    height: 350px;
+    height: 300px;
     border-radius: 10px;
     grid-gap: 10px;
-    padding: 30px;
+    padding: 20px;
+    margin: 50px 0;
     @media (min-width: 758px) {
+      margin: 70px 0;
       height: 402px;
       grid-gap: 20px;
       padding: 40px;
@@ -32,6 +33,9 @@ function Vision() {
     font-weight: bold;
     line-height: 32px;
     height: 32px;
+    &: hover {
+      color: #a9adc0;
+    }
     @media (min-width: 758px) {
       width: 241px;
       font-size: 24px;
@@ -41,7 +45,7 @@ function Vision() {
   const Arrow = styled.img`
     width: 15px;
     height: 10px;
-    @media (min-width: 640px) {
+    @media (min-width: 758px) {
       width: 21px;
       height: 16px;
     }
@@ -90,7 +94,7 @@ function Vision() {
           }}
         >
           {goalSelected && (
-            <span style={{ color: "white" }}>ЭРХЭМ ЗОРИЛГО</span>
+            <span style={{ color: "white"}}>ЭРХЭМ ЗОРИЛГО</span>
           )}
           {visionSelected && <span>ЭРХЭМ ЗОРИЛГО</span>}
 

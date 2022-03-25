@@ -3,10 +3,10 @@ import React from "react";
 
 function Hint({ children, title, icon }) {
   const Container = styled.div`
-    width: 300px;
     heigth: 268px;
-    @media (min-width: 720px) {
-      width: 350px;
+    margin: 10px;
+    @media (min-width: 758px) {
+      margin: 70px 10px;
       height: 313px;
     }
   `;
@@ -14,21 +14,21 @@ function Hint({ children, title, icon }) {
     background-color: #292a32;
     border-radius: 10px;
     height: 245px;
-    width: 300px;
     margin-top: 20px;
-    @media (min-width: 720px) {
-      width: 350px;
+    padding: 10px;
+    @media (min-width: 758px) {
       height: 286px;
       margin-top: 27px;
     }
   `;
   const Icon = styled.img`
-    backgroud: url(/logo.svg);
+    filter: invert(100%) sepia(66%) saturate(4794%) hue-rotate(179deg)
+      brightness(81%) contrast(84%);
     position: relative;
     height: 55px;
     width: 55px;
     top: -20px;
-    @media (min-width: 720px) {
+    @media (min-width: 758px) {
       height: 60px;
       width: 60px;
       top: -26px;
@@ -41,7 +41,7 @@ function Hint({ children, title, icon }) {
     position: relative;
     font-size: 20px;
     margin: 40px 0 0 10px;
-    @media (min-width: 720px) {
+    @media (min-width: 758px) {
       font-size: 24px;
       margin: 60px 0 0 20px;
     }
@@ -50,7 +50,7 @@ function Hint({ children, title, icon }) {
     color: #a9adc0;
     font-size: 14px;
     margin: 15px 0 0 10px;
-    @media (min-width: 720px) {
+    @media (min-width: 758px) {
       font-size: 18px;
       margin: 15px 0 0 20px;
     }
