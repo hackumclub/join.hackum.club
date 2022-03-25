@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import React from "react";
 
-function Hint({ children, title, icon }) {
+function Hint({ children, title, icon, color }) {
   const Container = styled.div`
     heigth: 268px;
     margin: 10px;
@@ -22,8 +22,15 @@ function Hint({ children, title, icon }) {
     }
   `;
   const Icon = styled.img`
-    filter: invert(100%) sepia(66%) saturate(4794%) hue-rotate(179deg)
-      brightness(81%) contrast(84%);
+    ${color == "red"
+      ? "filter: invert(31%) sepia(93%) saturate(1345%) hue-rotate(329deg) brightness(90%) contrast(108%);"
+      : color == "yellow"
+      ? "filter: invert(62%) sepia(99%) saturate(443%) hue-rotate(8deg) brightness(101%) contrast(97%);"
+      : color == "green"
+      ? "filter: invert(46%) sepia(26%) saturate(1939%) hue-rotate(123deg) brightness(100%) contrast(101%);"
+      : color == "blue"
+      ? "filter: invert(37%) sepia(51%) saturate(6012%) hue-rotate(182deg) brightness(96%) contrast(101%);"
+      : "filter: invert(100%) sepia(66%) saturate(4794%) hue-rotate(179deg) brightness(81%) contrast(84%);"}
     position: relative;
     height: 55px;
     width: 55px;

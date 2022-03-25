@@ -36,32 +36,50 @@ export default function Home() {
         <Text>
           <Col>
             <MiniBanner
+              color="red"
               title="Сонирхол нэгтэй хамт олонтой болох"
               icon="/icon1.svg"
             >
               Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ
               текстийг түр ашиглалаа
             </MiniBanner>
-            <MiniBanner title="Мэргэжилтэйгээ илүү танилцах" icon="/icon2.svg">
-              Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ
-              текстийг түр ашиглалаа
-            </MiniBanner>
-            <MiniBanner title="Workshops & Techmeetups" icon="/icon3.svg">
+            <MiniBanner
+              color="yellow"
+              title="Мэргэжилтэйгээ илүү танилцах"
+              icon="/icon2.svg"
+            >
               Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ
               текстийг түр ашиглалаа
             </MiniBanner>
             <MiniBanner
+              color="green"
+              title="Workshops & Techmeetups"
+              icon="/icon3.svg"
+            >
+              Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ
+              текстийг түр ашиглалаа
+            </MiniBanner>
+            <MiniBanner
+              color="blue"
               title="Сонирхолтой төслүүдэд гар бие оролцох"
               icon="/icon4.svg"
             >
               Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ
               текстийг түр ашиглалаа
             </MiniBanner>
-            <MiniBanner title="Бусад үйл ажиллагаа" icon="/icon5.svg">
+            <MiniBanner
+              color="red"
+              title="Бусад үйл ажиллагаа"
+              icon="/icon5.svg"
+            >
               Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ
               текстийг түр ашиглалаа
             </MiniBanner>
-            <MiniBanner title="Stickers & Hoodie" icon="/icon9.svg">
+            <MiniBanner
+              color="yellow"
+              title="Stickers & Hoodie"
+              icon="/icon9.svg"
+            >
               Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ
               текстийг түр ашиглалаа
             </MiniBanner>
@@ -70,18 +88,18 @@ export default function Home() {
         <Grid>
           <Row>
             <Col md={4}>
-              <Hint title="1. Хүсэлт илгээх" icon="/icon7.svg">
+              <Hint color="blue" title="1. Хүсэлт илгээх" icon="/icon7.svg">
                 Бидний бэлдсэн формийг үнэн зөв бөглөж элсэх хүсэлтээ явуулах
               </Hint>
             </Col>
             <Col md={4}>
-              <Hint title="2. Шалгаруулалт" icon="/icon8.svg">
+              <Hint color="red" title="2. Шалгаруулалт" icon="/icon8.svg">
                 Таны явуулсан хүсэлттэй манай үндсэн гишүүд танилцаж 80 оюутанд
                 тэнцсэн мэдээг хүргэх{" "}
               </Hint>
             </Col>
             <Col md={4}>
-              <Hint title="3. Нэгдсэн уулзалт" icon="/Icon6.svg">
+              <Hint color="yellow" title="3. Нэгдсэн уулзалт" icon="/Icon6.svg">
                 Хэрэв та клубдээ амжилттай тэнцсэн бол манай элсэлтийн нэгдсэн
                 уулзалт дээр ирж илүү дотно танилцаарай{" "}
               </Hint>
