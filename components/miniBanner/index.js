@@ -58,6 +58,7 @@ const IconBox = styled.div`
 `;
 
 const MiniBanner = ({ title, children, icon }) => {
+
   return (
     <FlexContainer>
       <MiniBannerDiv>
@@ -73,8 +74,5 @@ const MiniBanner = ({ title, children, icon }) => {
   );
 };
 
-{
-  /* <MiniBanner title="Сонирхол нэг хамт олонтой болох" text="Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ текстийг түр ашиглана"/> */
-}
 
 export default MiniBanner;
