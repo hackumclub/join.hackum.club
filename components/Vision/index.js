@@ -64,7 +64,7 @@ function Vision() {
     font-weight: bold;
     color: #a9adc0;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 15px;
     @media (min-width: 758px) {
       font-size: 20px;
       line-height: 32px;
