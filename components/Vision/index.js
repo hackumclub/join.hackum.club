@@ -28,7 +28,7 @@ function Vision() {
     cursor: pointer;
     border-width: 0;
     color: #74757a;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     line-height: 32px;
     height: 32px;
