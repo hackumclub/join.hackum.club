@@ -87,18 +87,18 @@ export default function Home() {
         </Text>
         <Grid>
           <Row>
-            <Col md={4}>
+            <Col lg={4}>
               <Hint color="blue" title="1. Хүсэлт илгээх" icon="/icon7.svg">
                 Бидний бэлдсэн формийг үнэн зөв бөглөж элсэх хүсэлтээ явуулах
               </Hint>
             </Col>
-            <Col md={4}>
+            <Col lg={4}>
               <Hint color="red" title="2. Шалгаруулалт" icon="/icon8.svg">
                 Таны явуулсан хүсэлттэй манай үндсэн гишүүд танилцаж 80 оюутанд
                 тэнцсэн мэдээг хүргэх{" "}
               </Hint>
             </Col>
-            <Col md={4}>
+            <Col lg={4}>
               <Hint color="yellow" title="3. Нэгдсэн уулзалт" icon="/Icon6.svg">
                 Хэрэв та клубдээ амжилттай тэнцсэн бол манай элсэлтийн нэгдсэн
                 уулзалт дээр ирж илүү дотно танилцаарай{" "}

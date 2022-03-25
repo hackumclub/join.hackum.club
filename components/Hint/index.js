@@ -6,7 +6,6 @@ function Hint({ children, title, icon, color }) {
     heigth: 268px;
     margin: 10px;
     @media (min-width: 758px) {
-      margin: 70px 10px;
       height: 313px;
     }
   `;
@@ -50,7 +49,7 @@ function Hint({ children, title, icon, color }) {
     margin: 40px 0 0 10px;
     @media (min-width: 758px) {
       font-size: 24px;
-      margin: 60px 0 0 20px;
+      margin: 0px 0 0 20px;
     }
   `;
   const Text = styled.p`
