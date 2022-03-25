@@ -1,16 +1,18 @@
-import styled from "@emotion/styled"
-import Image from "next/image"
+import styled from "@emotion/styled";
+import Image from "next/image";
 
 const FlexContainer = styled.div`
   widht: 100%;
   height: auto;
   display: flex;
   justify-content: center;
-`
+  margin: 15px 0;
+`;
 
 const MiniBannerDiv = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   width: 70%;
   height: 150px;
@@ -21,63 +23,58 @@ const MiniBannerDiv = styled.div`
 const TextBox = styled.div`
   width: 80%;
   height: 100px;
-  margin: 20px 20px 20px 10px;
+  margin: 0 10px;
 `;
 
 const Title = styled.h3`
   color: white;
-  font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  margin-top: 5px;
-  @media (max-width: 615px){
-    font-size: 15px;
+  margin-top: 0px;
+  font-size: 13px;
+  @media (min-width: 758px) {
+    font-size: 20px;
   }
-  @media (max-width: 500px){
-    font-size: 12px;
-  }
-`
+`;
 
 const Text = styled.p`
   color: rgba(169, 173, 192, 1);
-  font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  @media (max-width: 615px){
+  font-size: 11px;
+  @media (min-width: 758px) {
     font-size: 15px;
   }
-  @media (max-width: 500px){
-    font-size: 12px;
-  }
-`
+`;
 
 const IconBox = styled.div`
   width: 50px;
-  height: 50px;
-  background: rgba(196, 196, 196, 1);
+  filter: invert(100%) sepia(66%) saturate(4794%) hue-rotate(179deg)
+    brightness(81%) contrast(84%);
+  height: 45px;
   border-radius: 5px;
   margin: 20px 10px 20px 20px;
-  @media (max-width: 615px){
-    height: 45px;
-  }  @media (max-width: 500px){
-    height: 40px;
+  @media (min-width: 758px) {
+    height: 50px;
   }
-`
+`;
 
-const miniBanner = (props) => {
+const miniBanner = ({ title, children, icon }) => {
   return (
     <FlexContainer>
       <MiniBannerDiv>
         <IconBox>
-          <Image src="/icon1.png" alt="icon" width={50} height={50}/>
+          <Image src={icon} alt="icon" width={50} height={50} />
         </IconBox>
         <TextBox>
-          <Title>{props.title}</Title>
-          <Text>{props.text}</Text>
+          <Title>{title}</Title>
+          <Text>{children}</Text>
         </TextBox>
       </MiniBannerDiv>
     </FlexContainer>
   );
 };
 
-{/* <MiniBanner title="Сонирхол нэг хамт олонтой болох" text="Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ текстийг түр ашиглана"/> */}
+{
+  /* <MiniBanner title="Сонирхол нэг хамт олонтой болох" text="Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ текстийг түр ашиглана"/> */
+}
 
 export default miniBanner;
