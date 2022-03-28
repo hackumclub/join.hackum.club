@@ -13,7 +13,6 @@ const Banner = ({ button, img, children }) => {
     @media (min-width: 758px) {
       height: 400px;
       margin: 70px 0;
-      
     }
   `;
   return (

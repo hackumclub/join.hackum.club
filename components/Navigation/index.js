@@ -24,7 +24,7 @@ const Navigation = () => {
   return (
     <Nav>
       <Logo src="/Logo.svg"></Logo>
-      <CustomButton>Холбогдох</CustomButton>
+      {/* <CustomButton>Холбогдох</CustomButton> */}
     </Nav>
   );
 };
