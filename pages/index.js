@@ -1,15 +1,68 @@
 import Head from "next/head";
-import Banner from "components/Banner";
-import Navigation from "@/components/Navigation";
-import MiniBanner from "../components/miniBanner";
-import CustomButton from "@/components/CustomButton";
+import styled from "@emotion/styled";
+import { css } from "@emotion/react";
+
 import Arrow from "@/components/Arrow";
 import About from "@/components/About";
-import Vision from "@/components/Vision";
-import Text from "@/components/text1";
-import Hint from "@/components/Hint";
+import Banner from "components/Banner";
+import CustomButton from "@/components/CustomButton";
 import { Col, Grid, Row } from "@/components/Grid";
-import styled from "@emotion/styled";
+import Hint from "@/components/Hint";
+import MiniBanner from "../components/miniBanner";
+import Navigation from "@/components/Navigation";
+import Text from "@/components/text1";
+import Vision from "@/components/Vision";
+
+const BANNER_DATA = [
+  {
+    id: 1,
+    color: "red",
+    title: "Сонирхол нэгтэй хамт олонтой болох",
+    icon: "/icon1.svg",
+    description:
+      "Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ текстийг түр ашиглалаа",
+  },
+  {
+    id: 2,
+    color: "yellow",
+    title: "Мэргэжилтэйгээ илүү танилцах",
+    icon: "/icon2.svg",
+    description:
+      "Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ текстийг түр ашиглалаа",
+  },
+  {
+    id: 3,
+    color: "green",
+    title: "Workshops & Techmeetups",
+    icon: "/icon3.svg",
+    description:
+      "Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ текстийг түр ашиглалаа",
+  },
+  {
+    id: 4,
+    color: "blue",
+    title: "Сонирхолтой төслүүдэд гар бие оролцох",
+    icon: "/icon4.svg",
+    description:
+      "Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ текстийг түр ашиглалаа",
+  },
+  {
+    id: 5,
+    color: "red",
+    title: "Бусад үйл ажиллагаа",
+    icon: "/icon5.svg",
+    description:
+      "Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ текстийг түр ашиглалаа",
+  },
+  {
+    id: 6,
+    color: "yellow",
+    title: "Stickers & Hoodie",
+    icon: "/icon9.svg",
+    description:
+      "Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ текстийг түр ашиглалаа",
+  },
+];
 
 export default function Home() {
   const ButtonCon = styled.div`
@@ -24,65 +77,26 @@ export default function Home() {
         <meta name="description" content="HACKUM клубийн бүртгэл эхэллээ" />
       </Head>
       <Grid>
-        <Col>
-          <Navigation />
-        </Col>
+        <Navigation />
+
         <Banner img="/bannerBg.png" button="yes">
           Мэдээллийн технологийн Hackum <br key="1" /> клубийн бүртгэл эхэллээ
         </Banner>
-        <Arrow></Arrow>
-        <About></About>
-        <Vision></Vision>
+        <Arrow />
+        <About />
+        <Vision />
         <Text>
           <Col>
-            <MiniBanner
-              color="red"
-              title="Сонирхол нэгтэй хамт олонтой болох"
-              icon="/icon1.svg"
-            >
-              Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ
-              текстийг түр ашиглалаа
-            </MiniBanner>
-            <MiniBanner
-              color="yellow"
-              title="Мэргэжилтэйгээ илүү танилцах"
-              icon="/icon2.svg"
-            >
-              Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ
-              текстийг түр ашиглалаа
-            </MiniBanner>
-            <MiniBanner
-              color="green"
-              title="Workshops & Techmeetups"
-              icon="/icon3.svg"
-            >
-              Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ
-              текстийг түр ашиглалаа
-            </MiniBanner>
-            <MiniBanner
-              color="blue"
-              title="Сонирхолтой төслүүдэд гар бие оролцох"
-              icon="/icon4.svg"
-            >
-              Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ
-              текстийг түр ашиглалаа
-            </MiniBanner>
-            <MiniBanner
-              color="red"
-              title="Бусад үйл ажиллагаа"
-              icon="/icon5.svg"
-            >
-              Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ
-              текстийг түр ашиглалаа
-            </MiniBanner>
-            <MiniBanner
-              color="yellow"
-              title="Stickers & Hoodie"
-              icon="/icon9.svg"
-            >
-              Энэ хэсэгт энэний талаар дэлгэрэнгүй мэдээлэл байх болно. Энэ
-              текстийг түр ашиглалаа
-            </MiniBanner>
+            {BANNER_DATA.map((el) => (
+              <MiniBanner
+                key={el.id}
+                color={el.color}
+                title={el.title}
+                icon={el.icon}
+              >
+                {el.description}
+              </MiniBanner>
+            ))}
           </Col>
         </Text>
         <Grid>
@@ -95,26 +109,21 @@ export default function Home() {
             <Col lg={4}>
               <Hint color="red" title="2. Шалгаруулалт" icon="/icon8.svg">
                 Таны явуулсан хүсэлттэй манай үндсэн гишүүд танилцаж 80 оюутанд
-                тэнцсэн мэдээг хүргэх{" "}
+                тэнцсэн мэдээг хүргэх
               </Hint>
             </Col>
             <Col lg={4}>
               <Hint color="yellow" title="3. Нэгдсэн уулзалт" icon="/Icon6.svg">
                 Хэрэв та клубдээ амжилттай тэнцсэн бол манай элсэлтийн нэгдсэн
-                уулзалт дээр ирж илүү дотно танилцаарай{" "}
+                уулзалт дээр ирж илүү дотно танилцаарай
               </Hint>
             </Col>
           </Row>
         </Grid>
-        <Banner img="/cover1.png"></Banner>
-        <ButtonCon>
+        <Banner img="/cover1.png" />
+        <Row center="xs" style={{ marginBottom: "150px" }}>
           <CustomButton type="solid">Бүртгүүлэх</CustomButton>
-        </ButtonCon>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+        </Row>
       </Grid>
     </>
   );
