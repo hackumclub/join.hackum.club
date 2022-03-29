@@ -53,7 +53,7 @@ export function Text({ children }) {
       <Con>
         <SmallText>IT салбарт хайртай оюутан та</SmallText>
         <BigText>
-          Манай hackum клубтэй
+          Манай Hackum клубтэй
           <Highlight>нэгдсэнээр</Highlight>
         </BigText>
       </Con>
