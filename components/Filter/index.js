@@ -26,7 +26,7 @@ const Filter = ({ button, children }) => {
     <FilterGlass>
       <Title>{children}</Title>
       {button == "yes" && (
-        <CustomButton type="outline">Бүртгүүлэх</CustomButton>
+        <CustomButton variant="outline">Бүртгүүлэх</CustomButton>
       )}
     </FilterGlass>
   );

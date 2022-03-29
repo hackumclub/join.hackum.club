@@ -1,14 +1,15 @@
 import styled from "@emotion/styled";
+import { PopupButton } from "@typeform/embed-react";
 
-function CustomButton({ type, children }) {
-  const Button = styled.button`
+function CustomButton({ variant, children }) {
+  const Button = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     z-index: 1;
     font-size: 15px;
-    padding: 13px 28px;
+    // padding: 13px 28px;
     font-weight: bold;
     transition: transform 0.25s ease-out;
     &: hover {
@@ -16,15 +17,15 @@ function CustomButton({ type, children }) {
     }
     @media (min-width: 758px) {
       font-size: 18px;
-      padding: 16px 40px;
+      // padding: 16px 40px;
     }
-    ${type == "solid"
+    ${variant == "solid"
       ? `border-radius: 28px;
   background-color: #00ab84;
   color: white;
   border-width: 0;
   `
-      : type == "outline"
+      : variant == "outline"
       ? `border: 2px solid #ffffff;
       color: white;
       border-radius: 28px;
@@ -40,7 +41,28 @@ function CustomButton({ type, children }) {
  `}
   `;
 
-  return <Button>{children}</Button>;
+  return (
+    <Button>
+      <PopupButton
+        id="AXGEjg7f"
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "relative",
+          borderRadius: "50px",
+          border: "none",
+          background: "transparent",
+          padding: "13px 28px",
+          cursor: "pointer",
+          fontWeight: "bold",
+          fontSize: "15px",
+          color: "white",
+        }}
+      >
+        {children}
+      </PopupButton>
+    </Button>
+  );
 }
 
 export default CustomButton;

@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styled from "@emotion/styled";
-import { css } from "@emotion/react";
 
 import Arrow from "@/components/Arrow";
 import About from "@/components/About";
@@ -121,8 +120,14 @@ export default function Home() {
           </Row>
         </Grid>
         <Banner img="/cover1.png" />
-        <Row center="xs" style={{ marginBottom: "150px" }}>
-          <CustomButton type="solid">Бүртгүүлэх</CustomButton>
+        <Row center="xs" style={{ marginBottom: "100px" }}>
+          <CustomButton variant="solid">Бүртгүүлэх</CustomButton>
+        </Row>
+        <Row>
+          <p style={{ color: "white" }}>
+            <b style={{ color: "#606e7c" }}>Developed by:</b> Ш. Ганболд, Т.
+            Билгүүн, О. Даваадулам, Х. Очирсүх
+          </p>
         </Row>
       </Grid>
     </>
