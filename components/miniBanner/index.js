@@ -14,8 +14,9 @@ const MiniBannerDiv = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 70%;
-  height: 150px;
+  width: 90%;
+  height: auto;
+  padding: 30px 0 30px 0;
   background: rgba(41, 42, 50, 1);
   border-radius: 10px;
 `;
