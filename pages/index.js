@@ -74,6 +74,14 @@ export default function Home() {
       <Head>
         <title>Бүртгэл - Hackum.club</title>
         <meta name="description" content="HACKUM клубийн бүртгэл эхэллээ" />
+
+        <meta property="og:url" content="https://join.hackum.club" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Бүртгэл - Hackum.club" />
+        <meta name="og:description" content="HACKUM клубийн бүртгэл эхэллээ" />
+        <meta property="og:image" content="/thumbnail.jpg" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="720" />
       </Head>
       <Grid>
         <Navigation />
